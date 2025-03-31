@@ -1,85 +1,114 @@
-/* #Home{
-    background-color: #000;
-} */
-#minenav{
-   background-color: #000;
+#body {
+  background-color: #000;
 }
-#main{
-    background-color: #000;
-    /* height: 100vh; */
-    width: 100%;
+
+#minenav {
+  background-color: transparent;
+  backdrop-filter: blur(12px);
 }
-#img{
+
+.text-dark-mode {
+  color: #fff;
+}
+
+#img {
+  height: 400px;
+  width: 400px;
+  border-radius: 100%;
+  border: 10px solid #ffc107;
+  background-image: url('./images/personal_photo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.testFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#img2 {
+  height: 400px;
+  width: 400px;
+  align-items: center;
+  border-radius: 10%;
+  border: 10px solid #ffc107;
+  background-image: url('./images/personal_photo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#expertise-card-1 {
+  background-color: rgb(29, 29, 29);
+  color: #6a6a6a;
+}
+
+#expertise-card-2 {
+  background-color: rgb(29, 29, 29);
+
+}
+
+#expertise-card-3 {
+  background-color: rgb(29, 29, 29);
+
+}
+
+#hov {
+  position: relative;
+  border: 2px solid #ffc107;
+  transition: 0.4s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#hov:hover {
+  background-color: #ffc107;
+}
+
+.stady:hover {
+  background: linear-gradient(rgba, #ffc107);
+}
+
+#projects-card {
+  transition: 0.7s ease;
+}
+
+#projects-card:hover {
+  transform: scale(1.030);
+}
+
+#navbar-items {
+  transition: 0.7s ease;
+}
+
+#navbar-items:hover {
+  background-color: #ffc107;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 980px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #img {
     height: 300px;
     width: 300px;
     align-items: center;
     border-radius: 50%;
     border: 10px solid #ffc107;
-}
-#imgs{
+  }
+
+  #imgs {
     height: 300px;
     width: 300px;
     align-items: center;
     border-radius: 10%;
     border: 10px solid #ffc107;
+  }
 }
-#About{
-    background-color: #000;
-}
-#skills{
-    background-color: #000;
-}
-.exprtise{
-    background-color: #000;
-}
-#backcard{
-    background-color: rgb(29, 29, 29);
-}
-#work{
-    background-color: #000;
-}
-#hov{
-    position: relative;
-    border: 2px solid #ffc107;
-    transition: 0.4s ease;
-    cursor: pointer;
-    z-index: 1;
-}
-#hov:hover{
-    background-color: #ffc107;
-}
-.stady:hover{
-    background: linear-gradient(rgba,#ffc107);
-}
-#moh{
-    transition: 0.7s ease;
-}
-#moh:hover{
-    transform: scale(1.030);
-}
-#navcolor{
-    transition: 0.7s ease;
-}
-#navcolor:hover{
-    background-color: #ffc107;
-    border-radius: 25px;
-}
-#contact{
-    background-color: #000;
-}
-#footer{
-    background-color: #000;
-}
-#btn{
-  background-color: #fff;
-}
-/* .stady{
-    position: fixed;
-    position-: ;
-    background: linear-gradient(rgba,)#ffc107;
-    position: absolute;
-    border-radius: 8px;
-    left: 0;
-    bottom: 0;
-    z-index: 2;
-}*/

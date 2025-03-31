@@ -1,52 +1,41 @@
-let light=document.getElementById("Light");
-let main=document.getElementById("main");
-let text_main=document.getElementById("text_main");
-let name_main=document.getElementById("name_main");
-let minenav=document.getElementById("minenav");
-let navcolor=document.getElementsByClassName("nav-link");
-let about=document.getElementById("About");
-let skills=document.getElementById("skills");
-let work=document.getElementById("work");
-let contact=document.getElementById("contact");
-let footer=document.getElementById("footer");
-let btn=document.getElementById("btn");
+let light = document.getElementById("Light");
+let navColor = document.getElementsByClassName("nav-link");
+let body = document.getElementById("body");
+let textWhite = document.getElementsByClassName("text-dark-mode");
+let expertiseCard1 = document.getElementById("expertise-card-1");
+let expertiseCard2 = document.getElementById("expertise-card-2");
+let expertiseCard3 = document.getElementById("expertise-card-3");
 
-
-
-light.addEventListener("click",()=>{
-if(light.textContent=="Light")
-{
-  light.textContent="dark";
-  main.style.background="#fff";
-  minenav.style.background="#fff";
-  text_main.style.color="#000";
-  name_main.style.color="#000";
-  for(let i=0;i<=4;i++){
-  navcolor[i].style.color="#000";
-  };
-  about.style.background="#fff"
-  skills.style.background="#fff"
-  work.style.background="#fff"
-  contact.style.background="#fff"
-  footer.style.background="#fff"
-  btn.style.background="#000"
-
-}
-else
-{
-  main.style.background="#000";
-  minenav.style.background="#000";
-  light.textContent="Light";
-  text_main.style.color="#fff";
-  name_main.style.color="#fff";
-  for(let i=0;i<=4;i++){
-    navcolor[i].style.color="#fff";
+light.addEventListener("click", () => {
+  if (light.textContent == "Light") {
+    light.textContent = "Dark";
+    minenav.style.background = "#fff";
+    for (let i = 0; i <= 4; i++) {
+      navColor[i].style.color = "#000";
     }
-    about.style.background="#000"
-    skills.style.background="#000"
-    work.style.background="#000"
-    contact.style.background="#000"
-    btn.style.background="#fff"
+    body.style.background = "#fff";
+    for (let i = 0; i < textWhite.length; i++) {
+      textWhite[i].style.color = "#000";
+    }
+    expertiseCard1.style.background = "#b0b5b9";
+    expertiseCard2.style.background = "#b0b5b9";
+    expertiseCard3.style.background = "#b0b5b9";
 
-}
-})
+    console.log("Light");
+  } else {
+    minenav.style.background = "#000";
+    light.textContent = "Light";
+    for (let i = 0; i <= 4; i++) {
+      navColor[i].style.color = "#fff";
+    }
+    body.style.background = "#000";
+    for (let i = 0; i < textWhite.length; i++) {
+      textWhite[i].style.color = "#fff";
+    }
+
+    expertiseCard1.style.background = "rgb(29, 29, 29)";
+    expertiseCard2.style.background = "rgb(29, 29, 29)";
+    expertiseCard3.style.background = "rgb(29, 29, 29)";
+    console.log("Dark");
+  }
+});
